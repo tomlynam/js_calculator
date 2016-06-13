@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+		<script type="text/javascript" src="javascripts/app.js"></script>
+	</head>
+
+	<body>
+
+	<h1>Calculator</h1>
+
+	<p id="display">0</p>
+
+	<table>
+	  <tr>
+	    <td><input type="button" value="7" onclick="inputNumber('7');" /></td>
+	    <td><input type="button" value="8" onclick="inputNumber('8');" /></td> 
+	    <td><input type="button" value="9" onclick="inputNumber('9');" /></td>
+	    <td><input type="button" value="/" onclick="runOperation('/');" /></td>
+	  </tr>
+	   <tr>
+	    <td><input type="button" value="4" onclick="inputNumber('4');" /></td>
+	    <td><input type="button" value="5" onclick="inputNumber('5');" /></td> 
+	    <td><input type="button" value="6" onclick="inputNumber('6');" /></td>
+	    <td><input type="button" value="x" onclick="runOperation('*');" /></td>
+	  </tr>
+	   <tr>
+	    <td><input type="button" value="1" onclick="inputNumber('1');" /></td>
+	    <td><input type="button" value="2" onclick="inputNumber('2');" /></td> 
+	    <td><input type="button" value="3" onclick="inputNumber('3');" /></td>
+	    <td><input type="button" value="-" onclick="runOperation('-');" /></td>
+	  </tr>
+	   <tr>
+	    <td><input type="button" value="0" onclick="inputNumber('0');" /></td>
+	    <td><input type="button" value="." onclick="insertDecimal('.');" /></td> 
+	    <td><input type="button" value="+" onclick="runOperation('+');" /></td>
+	    <td><input type="button" value="=" onclick="calculate();" /></td>
+	  </tr>
+	</table>
+
+
+	</body>
+
+</html>
