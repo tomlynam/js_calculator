@@ -3,16 +3,24 @@ var secondNum = "";
 var operator = "";
 var result = 0;
 
+function clearInput() {
+	firstNum = "";
+	secondNum = "";
+	operator = "";
+	result = 0;
+	display.innerHTML = result;
+}
+
 function inputNumber(num) {
 	if(operator === "") {
-		var display = document.getElementById("display");
+		display = document.getElementById("display");
 		firstNum += num;
 		display.innerHTML = firstNum
-		console.log(firstNum);
 	}
 	else {
 		secondNum += num;
-		console.log(secondNum);
+		display = document.getElementById("display");
+		display.innerHTML = secondNum
 	}
 }
 
@@ -21,14 +29,15 @@ function runOperation(command) {
 		firstNum = result;
 		secondNum = "";
 		operator = command;
-		console.log(firstNum);
+		display = document.getElementById("display");
+		display.innerHTML = operator
 	}
 	else {
 		operator = command;
+		display = document.getElementById("display");
+		display.innerHTML = operator
 	}
-	console.log(operator);
 }
-
 
 function calculate() {
 	switch(operator) {
@@ -47,7 +56,5 @@ function calculate() {
   	default:
     	result = 'Not a valid operator';
 	}
-
 	display.innerHTML = result
-	console.log(result);
 }
