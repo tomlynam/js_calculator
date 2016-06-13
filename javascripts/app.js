@@ -17,6 +17,9 @@ function inputNumber(num) {
 		firstNum += num;
 		display.innerHTML = firstNum
 	}
+	else if(operator === "/" && num === "0") {
+		display.innerHTML = "Can't divide by zero"
+	}
 	else {
 		secondNum += num;
 		display = document.getElementById("display");
